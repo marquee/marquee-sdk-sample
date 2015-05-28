@@ -5,7 +5,7 @@ Favicon = require 'marquee-static-sdk/base/Favicon'
 
 module.exports = React.createClass
     displayName: 'Base'
-    render: ->
+    render: ->        
 
         <html>
             <head>
@@ -14,7 +14,7 @@ module.exports = React.createClass
                 <Favicon name='images/favicon.ico' />
                 <Asset path='style.sass' />
             </head>
-            <body>
+            <body className="Site__ #{ @props.page }__">
                 {@props.children}
 
                 <Asset path='script.coffee' />

@@ -1,10 +1,12 @@
-React   = require 'react'
-Base    = require './_Base.cjsx'
+React       = require 'react'
+
+Base        = require './_Base.cjsx'
+EntryList   = require '../layouts/EntryList'
 
 module.exports = React.createClass
     displayName: 'Home'
     render: ->
 
-        <Base>
-            <p>You are all set to get started with the Marquee SDK.</p>
+        <Base page='Home'>
+            <EntryList entries={@props.entries} />
         </Base>

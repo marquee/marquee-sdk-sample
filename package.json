@@ -1,6 +1,6 @@
 {
   "name": "marquee-sdk-example",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "",
   "main": "./main.cjsx",
   "scripts": {
@@ -11,14 +11,13 @@
   "author": "",
   "license": "ISC",
   "marquee": {
-    "CONTENT_API_TOKEN": "r0_82144e3af0db217e277bda4e9fa160ee36ba2bef",
+    "CONTENT_API_TOKEN": "r0_1b35a8f473d3cad96a0f4707954b8788ee4413fb",
     "CONTENT_API_HOST": "api.marquee.by",
     "HOST": "example.org"
   },
-  "devDependencies": {
-    "marquee-static-sdk": "^0.4.0-alpha.4"
-  },
   "dependencies": {
-    "react": "^0.12.2"
+    "marquee-static-sdk": "^0.4.0-alpha.4",
+    "react": "^0.12.2",
+    "when": "^3.7.3"
   }
 }
