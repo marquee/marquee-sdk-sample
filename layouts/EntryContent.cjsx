@@ -1,7 +1,7 @@
 React = require 'react'
 
 {
-    renderEntryContent
+  renderEntryContent
 } = require 'marquee-static-sdk/entry'
 
 module.exports = React.createClass

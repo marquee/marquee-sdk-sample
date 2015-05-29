@@ -1,8 +1,10 @@
-React   = require 'react'
+React = require 'react'
 
-Cover   = require 'marquee-static-sdk/components/Cover'
-Info    = require 'marquee-static-sdk/components/Info'
-Title   = require 'marquee-static-sdk/components/Title'
+{
+  Cover
+  Info
+  Title
+} = require 'marquee-static-sdk/components'
 
 module.exports = React.createClass
     displayName: 'EntryCover'
