@@ -11,7 +11,7 @@ module.exports = React.createClass
     render: ->
 
         <div className='_EntryCover__'>
-            <Cover link={ @props.link }>
+            <Cover link={ @props.link } image={ @props.image }>
                 <Info>
                     <Title title={ @props.title } level={ @props.level } />
                 </Info>

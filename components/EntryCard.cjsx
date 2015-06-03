@@ -1,7 +1,7 @@
-React       = require 'react'
-Card        = require 'marquee-static-sdk/components/Card'
+React = require 'react'
+Card  = require 'marquee-static-sdk/components/Card'
 
-EntryCover  = require '../layouts/EntryCover.cjsx'
+EntryCover = require '../layouts/EntryCover.cjsx'
 
 
 module.exports = React.createClass
@@ -9,5 +9,9 @@ module.exports = React.createClass
     render: ->
 
         <Card className='EntryCard'>
-            <EntryCover title={@props.entry.title} link={@props.entry.link} />
+            <EntryCover
+                image = { @props.entry.cover_image.w(800) }
+                title = { @props.entry.title }
+                link  = { @props.entry.link }
+            />
         </Card>

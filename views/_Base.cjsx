@@ -1,18 +1,28 @@
 React   = require 'react'
 
-Asset   = require 'marquee-static-sdk/base/Asset'
-Favicon = require 'marquee-static-sdk/base/Favicon'
+{
+    Asset
+    Favicon
+    GoogleFonts
+} = require 'marquee-static-sdk/base'
 
 module.exports = React.createClass
     displayName: 'Base'
-    render: ->        
+    render: ->
 
         <html>
             <head>
                 <title>Marquee SDK Example</title>
 
-                <Favicon name='images/favicon.ico' />
                 <Asset path='style.sass' />
+
+                <GoogleFonts fonts={
+                    'Abril Fatface': [400]
+                    'Gentium Book Basic': [400,700]
+                    'Open Sans': [300,400,700]
+                }/>
+
+                <Favicon name='images/favicon.ico' />
             </head>
             <body className="Site__ #{ @props.page }__">
                 {@props.children}
